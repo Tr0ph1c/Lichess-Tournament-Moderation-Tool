@@ -1,5 +1,6 @@
 # arena-check.py
-A tool made to help in the moderation / cheat detection on Lichess tournaments. (Arena tournaments) <br>
+### A tool made to help in the moderation / cheat detection on Lichess tournaments. (Arena tournaments)
+<br><br>
 _NOTE:- The program is in no way intended to replace nor overpower human judgement. It is only intended as a way to speed up the moderation process by highlighting suspicious games / players and providing useful information regarding them as to help the moderator quickly identify any potential cheaters._
 __________________
 ## How to install:
@@ -10,7 +11,7 @@ You'll first need some dependencies:
 -  (chess, stockfish, requests, argparse, time, json)
 <br>
 ** To install any of the previous modules: `pip install <module_name>`.
-   
+<br><br>
 For now, the whole project is only two python files, so just download the repository however you like, and run `arena-check.py`.
 __________________
 ## How to use:
@@ -33,5 +34,5 @@ optional arguments:
 _________________
 ## How it works:
 Essentially the program uses [Lichess's API](https://lichess.org/api) to get JSON responses containing the TOP N players and the games they played within the tournament. Then uses a local installation of [Stockfish](https://stockfishchess.org/download/) to evaluate and decide, using a simple accuracy equation, whether the player in this game played suspiciously. It is then up to the user of the program to manually check and ultimately decide whether the suspect was cheating.
-<br>
-_The linkss for all the analyzed games are outputted by the program for convenience._
+<br><br>
+_The links for all the analyzed games are outputted by the program for convenience._
