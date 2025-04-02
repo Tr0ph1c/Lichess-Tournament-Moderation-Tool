@@ -1,0 +1,1 @@
+Put full stockfish path in ./stockfish-path.txt
