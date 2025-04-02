@@ -16,7 +16,10 @@ import chess
 
 PATH = open('stockfish-path.txt', 'r').read()
 
-engine = Stockfish(path=PATH)
+try:
+    engine = Stockfish(path=PATH)
+except:
+    engine = None
 
 # Returns "analysis" dictionary with
 # 'perfect_moves', 'mistakes', and 'accuracy'
