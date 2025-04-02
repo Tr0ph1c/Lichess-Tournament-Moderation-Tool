@@ -161,8 +161,8 @@ def CheckGameAccuracy(game, player_username, accuracy_threshold):
 def main():
     parser = argparse.ArgumentParser(description="Tool to check accuracies of top arena tournament standings in lichess.")
     parser.add_argument("tournament_id", help="The ID of the Lichess arena tournament, the last 8 characters of the tournament's URL. https://lichess.org/tournament/xxxxxxxx")
-    parser.add_argument("-t", "--threshold", type=float, default=95.0, help="The accuracy of play at which to detect a suspicious game.")
-    parser.add_argument("-n", "--topn", type=int, default=10, help="Number of players from the top to check.")
+    parser.add_argument("-t", "--threshold", type=float, default=92.0, help="The accuracy of play at which to detect a suspicious game.")
+    parser.add_argument("-n", "--topn", type=int, default=5, help="Number of players from the top to check.")
 
     args = parser.parse_args()
 
